@@ -1,23 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-<meta charset = "UTF-8">
-<link href="css/style.css" rel="stylesheet">
+<meta charset="utf-8">
 <title>自己紹介サイト</title>
+<meta name="description"  content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<link href="css/style.css" rel="stylesheet">
 </head>
-	<body>
-		<header>
+<body>
+  <header id="header">
+    <h1>自己紹介サイト</h1>
+  </header>
+  <div id="main-vidual">
+  <img src="img/01.jpg" alt="">
+  <!--/main-vidual--></div>
+  <main>
+    <ul id="page-link">
+      <li><a href="#area-1">プロフィール</a></li>
+      <li><a href="#area-2">生い立ち</a></li>
+      <li><a href="jimoto.html">地元の写真</a></li>
+    </ul>
+    <section class="area" id="area-1">
+      <h2>プロフィ―ル</h2>
+      	<ul class="list1">
+			<li>名前 :  栗山 洋夢(クリヤマ ヒロム)</li>
+			<li>生年月日 :  2000 5/25 21歳</li>
+			<li>出身地 : 佐賀県唐津市</li>
+			<li>趣味 : お酒</li>
+			<li>好きな食べ物 : グラタン,ポテトサラダ</li>
+			<li>嫌いな食べ物 : きのこ </li>
+			<li>映画 :  メン・イン・ブラックシリーズ 第九地区</li>
+			<li>ゲーム : ペルソナ5R,LOST JUGMENT</li>
+			<li>好きなスポーツ :  サッカー</li>
+			<li>苦手なスポーツ : バスケ、テニス</li>
+			<li>最近はまってること : 自炊</li>
+			<li>欲しいもの  : 広めのキッチン、オーブントースター </li>
+			<li>好きな女優のタイプ : 松岡茉優</li>
+		</ul>
 
-		</header>
-				<h1>
-					<a href="/">自己紹介サイト</a>
-				</h1>
+    <!--/area1--></section>
+	 <section class="area" id="area-2">
+      <h2>学生時代</h2>
+     	 <div class="flex">
+		    <p><img src="img/佐志小学校.jpg"></p>
+		    <p>一年生のころからサッカーを始めました。
+			結構上手でした。小学生の卒業前クラブチームにスカウトしてもらえるぐらい。
+			<br>小学生の頃は相撲とかドッヂボールとかの大会にも参加してて、今思い返すとすごい
+			行動力だなって思います。
+
+		    </p>
+		</div>
+		<h2 class = "orange">中学生時代</h2>
+		<div class="flex2">
+		    <p><img src="img/佐志中学校.jpg"></p>
+		   <p>野球部へなぜか入学、全然下手。学校が弱かったので意外とレギュラーで出場できてた
+		   投げるのが下手すぎて、送球ミスめっちゃくちゃ多かった。足が速かったのと、打率で何とか
+		   レギュラーの座を守れてました。<br>野球部のみんなとは今でも仲が
+		   良いので、今考えてみると間違いじゃなかったかなと思ってます。</p>
+		</div>
+		<h2 class = "yellow">高校生時代</h2>
+		<div class="flex3">
+		    <p><img src="img/唐津西高校.jpg"></p>
+		   <p>再びサッカー部へ。一年の夏にはレギュラー。 しかし一年の冬に足首の怪我で半年近く
+		   自由に運動できなくなる。結果二年の夏に退部。そこからは少しぐれちゃってました。
+		  <br> 受験シーズン突入後は全く勉強してませんでした。大学なんとなく受けてはみたけど、
+		   普通に落ちました。IT関連の勉強をしたかったので、専門学校へ進学。
+		   </p>
+		</div>
+
+		<h2 class = "orange">専門学生時代</h2>
+		<div class="flex4">
+		 <p><img src="img/麻生情報ビジネス専門学校.jpg"></p>
+		   <p>バイトしかしてない。あだ名もバイト戦士ってつけられてました。
+		   ひどいとき学校行きながら週40ぐらい働いてました。<br>コロナがはやり始めて
+		   ゲームにドはまりしてRPGのゲームを片っ端からやってました。</p>
+		</div>
 
 
 
 
-		<footer>
 
-		</footer>
-	</body>
+
+	 </section>
+
+      <section class="area" id="area-3">
+      <h2>地元の紹介</h2>
+
+    <!--/area3--></section>
+  <!--/main--></main>
+
+  <footer id="footer">
+    <small>&copy; copyright.</small>
+  </footer>
+<script src="style.js"></script>
+</body>
 </html>
